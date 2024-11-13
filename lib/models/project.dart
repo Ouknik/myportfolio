@@ -19,11 +19,13 @@ class Project {
 class StaticData {
   static final personalInfo = {
     'name': 'Abdellh ouknik',
+    'profileImage':'assets/images/profile.jpg',
     'title': 'Flutter & Backend Developer',
     'description': 'Passionate freelance developer with expertise in Flutter, Laravel, and Golang.',
     'email': 'ouknikabdeallah@gmail.com',
     'location': 'Marrakech',
-    'github': 'github.com/ouknik',
+    'github': 'ouknik',
+    'website':"https://play.google.com/store/apps/developer?id=DeV+Step&hl=ar"
   };
 
   static final List<Project> projects = [
@@ -41,7 +43,7 @@ class StaticData {
       description: 'Developed the "MyMoroccanUniv" app, a government-backed application designed to help students access university events, view grades, manage timetables, and request official documents. The app streamlines university services and enhances student engagement through an easy-to-use interface and real-time data integration.',
       imageUrl: 'assets/images/project2.png',
       technologies: ['Flutter', 'Laravel','MySql','Firebase','oracle'],
-      link: 'https://play.google.com/store/apps/details?id=com.uca.estudent',
+      link: 'https://www.uca.ma/fssm/fr/news/lapplication-mobile-nationale-mymoroccanuniv',
     ),
 
      Project(
@@ -49,7 +51,7 @@ class StaticData {
       description: 'Developed a real estate advertising app for property sales and rentals, allowing users to post and manage listings. The app facilitates communication between sellers or landlords and potential buyers or renters, offering a simple platform to streamline property transactions.',
       imageUrl: 'assets/images/project3.png',
       technologies: ['Flutter', 'golang','MySql','Firebase'],
-      link: 'https://play.google.com/store/apps/details?id=com.uca.estudent',
+      link: 'https://github.com/Ouknik/farah_immobile-/blob/main/README.md',
     ),
 
 

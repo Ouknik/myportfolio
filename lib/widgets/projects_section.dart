@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import '../controlers/portfolio_controller.dart';
 import '../models/project.dart';
 import 'project_card.dart';
-
+import 'dart:html' as html;
 class ProjectsSection extends GetView<PortfolioController> {
   @override
   Widget build(BuildContext context) {
@@ -36,7 +36,11 @@ class ProjectsSection extends GetView<PortfolioController> {
                 itemCount: controller.projects.length,
                 itemBuilder: (context, index) {
                   final project = controller.projects[index];
-                  return ProjectCard(project: project);
+                  return  GestureDetector(
+                    onTap: (){
+                      _launchURL(project.link);
+                    },
+                    child:  ProjectCard(project: project));
                 },
               );
             }
@@ -46,6 +50,10 @@ class ProjectsSection extends GetView<PortfolioController> {
     );
   }
 }
+
+ void _launchURL(String url) {
+    html.window.open(url, '_blank');
+  }
 /*
 class ProjectCard extends StatelessWidget {
   final Project project;
